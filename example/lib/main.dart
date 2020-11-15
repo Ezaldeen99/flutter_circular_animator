@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget_circular_animator/widget_circular_animator.dart';
 
-import 'Res.dart';
-
 void main() {
   runApp(MyApp());
 }
@@ -11,28 +9,29 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: animationsDemo(),
-    );
-  }
-}
-
-class animationsDemo extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return DemoState();
-  }
-}
-
-class DemoState extends State<animationsDemo> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-          child: Align(
-        child: WidgetCircularAnimator(
-          child: Image.asset(Resources.person),
-        ),
-      )),
+      home: Scaffold(
+        body: Center(
+            child: Align(
+          child: WidgetCircularAnimator(
+            size: 200,
+            innerIconsSize: 3,
+            outerIconsSize: 3,
+            innerColor: Colors.deepOrange,
+            outerColor: Colors.deepPurple,
+            innerAnimationSeconds: 30,
+            outerAnimationSeconds: 30,
+            child: Container(
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle, color: Colors.grey[200]),
+              child: Icon(
+                Icons.person_outline,
+                color: Colors.deepOrange[200],
+                size: 60,
+              ),
+            ),
+          ),
+        )),
+      ),
     );
   }
 }
