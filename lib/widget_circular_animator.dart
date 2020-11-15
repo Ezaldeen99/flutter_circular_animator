@@ -79,7 +79,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
         turns: animation2,
         child: CustomPaint(
           painter: Arc2Painter(
-              color: widget.innerColor, iconsSize: widget.innerIconsSize),
+              color: widget.outerColor, iconsSize: widget.innerIconsSize),
           child: Container(
             width: widget.size,
             height: widget.size,
@@ -95,7 +95,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
         turns: animation1,
         child: CustomPaint(
           painter: Arc1Painter(
-              color: widget.outerColor, iconsSize: widget.outerIconsSize),
+              color: widget.innerColor, iconsSize: widget.outerIconsSize),
           child: Container(
             width: 0.85 * widget.size,
             height: 0.85 * widget.size,
