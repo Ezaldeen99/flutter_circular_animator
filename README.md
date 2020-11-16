@@ -16,9 +16,7 @@ The widget helps to animate any widget you have such as a profile or an image or
 ## Use Examples 
 
 
-<div align="center">
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/Screenshot_20201116-162822_Gallery.jpg" width="200" height="200">
-</div>
 
 
 you can costumize anything in this widget, inner and outer colors, icons size and animation duration to suits your applications use-case.
