@@ -134,7 +134,7 @@ The whole widget width and height.
 # Blog
 
 
-[widget_circular_animator_medium](https://medium.com/p/b499c1a98ee5/edit) 
+[widget_circular_animator_medium](https://medium.com/@ezaldden99/introducing-a-new-flutter-widget-animator-b499c1a98ee5) 
 
 
 ---
