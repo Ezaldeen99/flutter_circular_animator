@@ -14,7 +14,7 @@ A new Flutter widget animator inspired by this lottie animation. [https://lottie
 
 # Features
 
-**Reactive Updating**
+**Dynamic Animation**
 
 The widget helps to animate any widget you have such as a profile or an image or anything else with a simple modren animatins to help you build a better UI in your next app.
 
