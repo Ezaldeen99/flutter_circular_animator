@@ -3,15 +3,11 @@
 A new Flutter widget animator inspired by this lottie animation. [https://lottiefiles.com/3619-profile]
 
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/entronad/flutter_echarts/master/doc/logo.png" />
-</p>
-
 [![pub](https://img.shields.io/pub/v/widget_circular_animator.svg)](https://pub.dev/packages/widget_circular_animator/install)
 
 
 <div align="center">
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example1.gif" width="33%" height="33%" alt="person"/>
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example_1.gif" width="33%" height="33%" alt="person"/>
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif" width="33%" height="33%" alt="clock"/>
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example3.gif" width="33%" height="33%" alt="person"/>
 </div>
