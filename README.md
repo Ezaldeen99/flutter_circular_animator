@@ -12,8 +12,9 @@ The widget helps to animate any widget you have such as a profile or an image or
 
 ## Use Examples 
 
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example3.gif" width="200" height="400">
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif" width="200" height="400">
+![Alt demo](https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example3.gif)
+
+![Alt demo](https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif)
 
 
 
