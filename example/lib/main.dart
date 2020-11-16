@@ -12,17 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-            child: Align(
-          child: WidgetCircularAnimator(
-            size: 200,
-            innerIconsSize: 3,
-            outerIconsSize: 3,
-            innerColor: Colors.deepOrange,
-            outerColor: Colors.deepPurple,
-            innerAnimationSeconds: 30,
-            outerAnimationSeconds: 30,
-            child: Image.asset(Resources.person),
-          ),
+            child: WidgetCircularAnimator(
+          size: 200,
+          innerIconsSize: 3,
+          outerIconsSize: 3,
+          innerColor: Colors.deepOrange,
+          outerColor: Colors.deepPurple,
+          innerAnimationSeconds: 30,
+          outerAnimationSeconds: 30,
+          child: Image.asset(Resources.person),
         )),
       ),
     );
