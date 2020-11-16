@@ -7,14 +7,14 @@ A new Flutter widget animator inspired by this lottie animation. [https://lottie
 
 
 <div align="center">
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif" width="33%" height="33%" alt="person"/>
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example_2.gif" width="33%" height="33%" alt="clock"/>
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example.gif" width="33%" height="33%" alt="person"/>
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif" width="30%" height="30%" alt="person"/>
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example_2.gif" width="30%" height="30%" alt="clock"/>
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example.gif" width="30%" height="30%" alt="person"/>
 </div>
 
 # Features
 
-**Reactive Updating**
+**Dynamic Animation**
 
 The widget helps to animate any widget you have such as a profile or an image or anything else with a simple modren animatins to help you build a better UI in your next app.
 
@@ -46,7 +46,7 @@ The `widget_circular_animator` package itself is very simple to use, just like a
 
 ```
 
-          Center(
+        Center(
           child: WidgetCircularAnimator(
             size: 200,
             innerIconsSize: 3,
@@ -134,7 +134,7 @@ The whole widget width and height.
 # Blog
 
 
-[widget_circular_animator_medium](https://medium.com/p/b499c1a98ee5/edit) 
+[widget_circular_animator_medium](https://medium.com/@ezaldden99/introducing-a-new-flutter-widget-animator-b499c1a98ee5) 
 
 
 ---
