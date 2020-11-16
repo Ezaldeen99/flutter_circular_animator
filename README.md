@@ -13,7 +13,7 @@ The widget helps to animate any widget you have such as a profile or an image or
 
 ## Use Examples 
 
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/Screenshot_20201116-162822_Gallery.jpg" width="100" height="100">
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/Screenshot_20201116-162822_Gallery.jpg" width="400" height="800">
 
 
 
