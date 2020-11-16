@@ -6,6 +6,8 @@ A new Flutter widget animator inspired by this lottie animation. [https://lottie
 
 
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example1.gif" >
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif" >
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example3.gif" >
 
 
 
@@ -13,7 +15,9 @@ A new Flutter widget animator inspired by this lottie animation. [https://lottie
 
 The widget helps to animate any widget you have such as a profile or an image or anything else with a simple modren animatins to help you build a better UI in your next app.
 
+# Installation 
 
+you can open 
 
 ## Use Examples 
 
