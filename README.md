@@ -1,6 +1,6 @@
 # widget_circular_animator
 
-A new Flutter widget animator inspired by this lottle animation. [https://lottiefiles.com/3619-profile]
+A new Flutter widget animator inspired by this lottie animation. [https://lottiefiles.com/3619-profile]
 
 ## Example
 
