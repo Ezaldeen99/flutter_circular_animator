@@ -5,7 +5,6 @@ A new Flutter widget animator inspired by this lottie animation. [https://lottie
 
 
 ![Alt demo](https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example1.gif)
-![Alt demo](https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example3.gif)
 
 
 The widget helps to animate any widget you have such as a profile or an image or anything else with a simple modren animatins to help you build a better UI in your next app.\
@@ -15,7 +14,7 @@ The widget helps to animate any widget you have such as a profile or an image or
 ## Use Examples 
 
 
-![Alt demo](https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif)
+![Alt demo](https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/Screenshot_20201116-162822_Gallery.jpg)
 
 
 
