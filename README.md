@@ -3,7 +3,11 @@
 A new Flutter widget animator inspired by this lottie animation. [https://lottiefiles.com/3619-profile]
 
 
+
+
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example1.gif" >
+
+
 
 
 
