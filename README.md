@@ -46,7 +46,7 @@ The `widget_circular_animator` package itself is very simple to use, just like a
 
 ```
 
-          Center(
+        Center(
           child: WidgetCircularAnimator(
             size: 200,
             innerIconsSize: 3,
