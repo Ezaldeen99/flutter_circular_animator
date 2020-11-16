@@ -7,7 +7,7 @@ A new Flutter widget animator inspired by this lottie animation. [https://lottie
 
 
 <div align="center">
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example_1.gif" width="33%" height="33%" alt="person"/>
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example2.gif" width="33%" height="33%" alt="person"/>
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example_2.gif" width="33%" height="33%" alt="clock"/>
 <img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/example.gif" width="33%" height="33%" alt="person"/>
 </div>
