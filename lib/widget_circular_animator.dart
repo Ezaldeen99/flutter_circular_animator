@@ -145,30 +145,30 @@ class Arc2Painter extends CustomPainter {
     canvas.drawArc(rect, 0.74 * pi, 0.65 * pi, false, p);
     canvas.drawArc(rect, 1.46 * pi, 0.47 * pi, false, p);
 
-    // //first shape
-    // canvas.drawRect(
-    //     Rect.fromLTWH(size.width * 0.2 - iconsSize,
-    //         size.width * 0.9 - iconsSize, iconsSize * 2, iconsSize * 2),
-    //     p);
-    //
-    // //second shape
-    // //draw the inner cross
-    // var centerX = size.width * 0.385;
-    // var centerY = size.width * 0.015;
-    // var lineLength = iconsSize / 2;
-    // canvas.drawLine(new Offset(centerX - lineLength, centerY + lineLength),
-    //     new Offset(centerX + lineLength, centerY - lineLength), p);
-    // canvas.drawLine(new Offset(centerX + lineLength, centerY + lineLength),
-    //     new Offset(centerX - lineLength, centerY - lineLength), p);
-    // // the circle
-    // canvas.drawCircle(
-    //     Offset(size.width * 0.385, size.width * 0.015), iconsSize + 1, p);
-    //
-    // // third shape
-    // canvas.drawOval(
-    //     Rect.fromLTWH(size.width - iconsSize * 1.5,
-    //         size.width * 0.445 - iconsSize, iconsSize * 3, iconsSize * 2),
-    //     p);
+    //first shape
+    canvas.drawRect(
+        Rect.fromLTWH(size.width * 0.2 - iconsSize,
+            size.width * 0.9 - iconsSize, iconsSize * 2, iconsSize * 2),
+        p);
+
+    //second shape
+    //draw the inner cross
+    var centerX = size.width * 0.385;
+    var centerY = size.width * 0.015;
+    var lineLength = iconsSize / 2;
+    canvas.drawLine(new Offset(centerX - lineLength, centerY + lineLength),
+        new Offset(centerX + lineLength, centerY - lineLength), p);
+    canvas.drawLine(new Offset(centerX + lineLength, centerY + lineLength),
+        new Offset(centerX - lineLength, centerY - lineLength), p);
+    // the circle
+    canvas.drawCircle(
+        Offset(size.width * 0.385, size.width * 0.015), iconsSize + 1, p);
+
+    // third shape
+    canvas.drawOval(
+        Rect.fromLTWH(size.width - iconsSize * 1.5,
+            size.width * 0.445 - iconsSize, iconsSize * 3, iconsSize * 2),
+        p);
   }
 
   @override
