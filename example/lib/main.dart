@@ -1,7 +1,6 @@
+import 'package:example/Res.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_circular_animator/widget_circular_animator.dart';
-
-import 'Res.dart';
 
 void main() {
   runApp(MyApp());

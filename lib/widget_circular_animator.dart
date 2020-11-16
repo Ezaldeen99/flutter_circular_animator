@@ -133,43 +133,42 @@ class Arc2Painter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    Paint p2 = new Paint()
+    Paint p = new Paint()
       ..color = color
       ..strokeWidth = 1.0
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
-    Rect rect1 = Rect.fromLTWH(0.0, 0.0, size.width, size.height);
+    Rect rect = Rect.fromLTWH(0.0, 0.0, size.width, size.height);
 
-    canvas.drawArc(rect1, 0.0, 0.67 * pi, false, p2);
-    canvas.drawArc(rect1, 0.74 * pi, 0.65 * pi, false, p2);
-    canvas.drawArc(rect1, 1.46 * pi, 0.47 * pi, false, p2);
+    canvas.drawArc(rect, 0.0, 0.67 * pi, false, p);
+    canvas.drawArc(rect, 0.74 * pi, 0.65 * pi, false, p);
+    canvas.drawArc(rect, 1.46 * pi, 0.47 * pi, false, p);
 
     //first shape
     canvas.drawRect(
         Rect.fromLTWH(size.width * 0.2 - iconsSize,
             size.width * 0.9 - iconsSize, iconsSize * 2, iconsSize * 2),
-        p2);
+        p);
 
     //second shape
-
     //draw the inner cross
     var centerX = size.width * 0.385;
     var centerY = size.width * 0.015;
     var lineLength = iconsSize / 2;
     canvas.drawLine(new Offset(centerX - lineLength, centerY + lineLength),
-        new Offset(centerX + lineLength, centerY - lineLength), p2);
+        new Offset(centerX + lineLength, centerY - lineLength), p);
     canvas.drawLine(new Offset(centerX + lineLength, centerY + lineLength),
-        new Offset(centerX - lineLength, centerY - lineLength), p2);
+        new Offset(centerX - lineLength, centerY - lineLength), p);
     // the circle
     canvas.drawCircle(
-        Offset(size.width * 0.385, size.width * 0.015), iconsSize + 1, p2);
+        Offset(size.width * 0.385, size.width * 0.015), iconsSize + 1, p);
 
     // third shape
     canvas.drawOval(
         Rect.fromLTWH(size.width - iconsSize * 1.5,
             size.width * 0.445 - iconsSize, iconsSize * 3, iconsSize * 2),
-        p2);
+        p);
   }
 
   @override
@@ -186,29 +185,29 @@ class Arc1Painter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    Paint p3 = new Paint()
+    Paint p = new Paint()
       ..color = color
       ..strokeWidth = 1
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
-    Rect rect3 = new Rect.fromLTWH(0, 0, size.width, size.height);
+    Rect rect = new Rect.fromLTWH(0, 0, size.width, size.height);
 
-    canvas.drawArc(rect3, 0.15, 0.9 * pi, false, p3);
-    canvas.drawArc(rect3, 1.05 * pi, 0.9 * pi, false, p3);
+    canvas.drawArc(rect, 0.15, 0.9 * pi, false, p);
+    canvas.drawArc(rect, 1.05 * pi, 0.9 * pi, false, p);
 
     //draw the cross
     canvas.drawLine(new Offset(-iconsSize, size.width / 2 - iconsSize),
-        new Offset(iconsSize, size.width / 2 + iconsSize), p3);
+        new Offset(iconsSize, size.width / 2 + iconsSize), p);
     canvas.drawLine(new Offset(iconsSize, size.width / 2 - iconsSize),
-        new Offset(-iconsSize, size.width / 2 + iconsSize), p3);
+        new Offset(-iconsSize, size.width / 2 + iconsSize), p);
 
     // draw the circle
-    canvas.drawCircle(Offset(size.width, size.width / 2), iconsSize, p3);
+    canvas.drawCircle(Offset(size.width, size.width / 2), iconsSize, p);
   }
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
-    return false;
+    return true;
   }
 }
