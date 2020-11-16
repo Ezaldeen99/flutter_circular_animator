@@ -17,7 +17,7 @@ The widget helps to animate any widget you have such as a profile or an image or
 
 
 <div align="center">
-<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/Screenshot_20201116-162822_Gallery.jpg">
+<img src="https://github.com/Ezaldeen99/widget_circular_animator/blob/master/screenshots/Screenshot_20201116-162822_Gallery.jpg" width="200" height="200">
 </div>
 
 
