@@ -44,7 +44,7 @@ Details see [pub.dev](https://pub.dev/packages/widget_circular_animator/install)
 
 The `widget_circular_animator` package itself is very simple to use, just like a common `statefullWidget`:
 
-```
+```dart
 
         Center(
           child: WidgetCircularAnimator(
