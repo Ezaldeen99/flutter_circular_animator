@@ -73,6 +73,13 @@ The `widget_circular_animator` package itself is very simple to use, just like a
 
 See the full example [circular_animator_example](https://github.com/Ezaldeen99/flutter_circular_animator/tree/master/example).
 
+# Supported animations
+
+This widget supports all flutter curve animations.
+You can see all the supported animations here https://api.flutter.dev/flutter/animation/Curves-class.html.
+
+The class [Animations](https://github.com/Ezaldeen99/flutter_circular_animator/tree/master/lib/utils/animationsSelector.dart) is already there in the library to make things easier on you choosing your animation
+
 
 # Widget Properties
 
@@ -160,15 +167,7 @@ The animation direction.
 
 # Blog
 
-
 [widget_circular_animator_medium](https://medium.com/@ezaldden99/introducing-a-new-flutter-widget-animator-b499c1a98ee5) 
-
-
-# Supported animations
-This widget supports all flutter curve animations.
-You can see all the supported animations here https://api.flutter.dev/flutter/animation/Curves-class.html.
-
-The class [Animations](https://github.com/Ezaldeen99/flutter_circular_animator/tree/master/lib/utils/animationsSelector.dart) is already there in the library to make things easier on you choosing your animation
 
 
 ---
