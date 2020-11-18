@@ -49,12 +49,6 @@ The `widget_circular_animator` package itself is very simple to use, just like a
       Center(
           child: WidgetCircularAnimator(
             size: 200,
-            innerIconsSize: 3,
-            outerIconsSize: 3,
-            innerColor: Colors.deepOrange,
-            outerColor: Colors.deepPurple,
-            innerAnimationSeconds: 30,
-            outerAnimationSeconds: 30,
             child: Container(
               decoration: BoxDecoration(
                   shape: BoxShape.circle, color: Colors.grey[200]),
