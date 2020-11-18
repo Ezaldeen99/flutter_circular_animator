@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
           innerAnimation: Animations.bounceIn,
           outerAnimation: Animations.bounceIn,
           innerColor: Colors.orangeAccent,
+          reverse: false,
           outerColor: Colors.orangeAccent,
           innerAnimationSeconds: 10,
           outerAnimationSeconds: 10,

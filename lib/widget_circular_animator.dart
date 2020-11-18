@@ -6,17 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 class WidgetCircularAnimator extends StatefulWidget {
-  final Color innerColor;
-  final Color outerColor;
-  final Curve innerAnimation;
-  final Curve outerAnimation;
-  final double innerIconsSize;
-  final double size;
-  final double outerIconsSize;
-  final int innerAnimationSeconds;
-  final int outerAnimationSeconds;
-  final Widget child;
-  final bool reverse;
+
 
   const WidgetCircularAnimator({
     @required this.child,
@@ -31,6 +21,18 @@ class WidgetCircularAnimator extends StatefulWidget {
     this.outerAnimationSeconds = 30,
     this.reverse = true,
   }) : assert(child != null);
+
+  final Color innerColor;
+  final Color outerColor;
+  final Curve innerAnimation;
+  final Curve outerAnimation;
+  final double innerIconsSize;
+  final double size;
+  final double outerIconsSize;
+  final int innerAnimationSeconds;
+  final int outerAnimationSeconds;
+  final Widget child;
+  final bool reverse;
 
   @override
   _WidgetAnimatorState createState() => _WidgetAnimatorState();
@@ -69,7 +71,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
     super.dispose();
   }
 
-  _child() {
+  Center _child() {
     return Center(
       child: Container(
         width: widget.size * 0.7,
@@ -79,7 +81,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
     );
   }
 
-  _secondArc() {
+  Center _secondArc() {
     return Center(
       child: RotationTransition(
         turns: animation2,
@@ -95,7 +97,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
     );
   }
 
-  _firstArc() {
+  Center _firstArc() {
     return Center(
       child: RotationTransition(
         turns: animation1,
@@ -122,7 +124,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
         parent: controller1,
         curve: Interval(0.0, 1.0, curve: widget.innerAnimation)));
 
-    var secondAnimation = Tween<double>(begin: -1.0, end: 0.0).animate(
+    final secondAnimation = Tween<double>(begin: -1.0, end: 0.0).animate(
         CurvedAnimation(
             parent: controller2,
             curve: Interval(0.0, 1.0, curve: widget.outerAnimation)));
@@ -138,20 +140,20 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
 }
 
 class Arc2Painter extends CustomPainter {
+  Arc2Painter({this.color, this.iconsSize = 3});
+
   final Color color;
   final double iconsSize;
 
-  Arc2Painter({this.color, this.iconsSize = 3});
-
   @override
   void paint(Canvas canvas, Size size) {
-    Paint p = new Paint()
+    final Paint p = Paint()
       ..color = color
       ..strokeWidth = 1.0
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
-    Rect rect = Rect.fromLTWH(0.0, 0.0, size.width, size.height);
+    final Rect rect = Rect.fromLTWH(0.0, 0.0, size.width, size.height);
 
     // draw the three arcs
     canvas.drawArc(rect, 0.0, 0.67 * pi, false, p);
@@ -166,13 +168,13 @@ class Arc2Painter extends CustomPainter {
 
     //second shape
     //draw the inner cross
-    var centerX = size.width * 0.385;
-    var centerY = size.width * 0.015;
-    var lineLength = iconsSize / 2;
-    canvas.drawLine(new Offset(centerX - lineLength, centerY + lineLength),
-        new Offset(centerX + lineLength, centerY - lineLength), p);
-    canvas.drawLine(new Offset(centerX + lineLength, centerY + lineLength),
-        new Offset(centerX - lineLength, centerY - lineLength), p);
+    final centerX = size.width * 0.385;
+    final centerY = size.width * 0.015;
+    final lineLength = iconsSize / 2;
+    canvas.drawLine(Offset(centerX - lineLength, centerY + lineLength),
+        Offset(centerX + lineLength, centerY - lineLength), p);
+    canvas.drawLine(Offset(centerX + lineLength, centerY + lineLength),
+        Offset(centerX - lineLength, centerY - lineLength), p);
     // the circle
     canvas.drawCircle(Offset(centerX, centerY), iconsSize + 1, p);
 
@@ -190,31 +192,31 @@ class Arc2Painter extends CustomPainter {
 }
 
 class Arc1Painter extends CustomPainter {
+  Arc1Painter({this.color, this.iconsSize = 3});
+
   final Color color;
   final double iconsSize;
 
-  Arc1Painter({this.color, this.iconsSize = 3});
-
   @override
   void paint(Canvas canvas, Size size) {
-    Paint p = new Paint()
+    final Paint p = Paint()
       ..color = color
       ..strokeWidth = 1
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
-    Rect rect = new Rect.fromLTWH(0, 0, size.width, size.height);
+    final Rect rect = Rect.fromLTWH(0, 0, size.width, size.height);
 
     // draw the two arcs
     canvas.drawArc(rect, 0.15, 0.9 * pi, false, p);
     canvas.drawArc(rect, 1.05 * pi, 0.9 * pi, false, p);
 
     // draw the cross
-    var centerY = size.width / 2;
-    canvas.drawLine(new Offset(-iconsSize, centerY - iconsSize),
-        new Offset(iconsSize, centerY + iconsSize), p);
-    canvas.drawLine(new Offset(iconsSize, centerY - iconsSize),
-        new Offset(-iconsSize, centerY + iconsSize), p);
+    final centerY = size.width / 2;
+    canvas.drawLine(Offset(-iconsSize, centerY - iconsSize),
+        Offset(iconsSize, centerY + iconsSize), p);
+    canvas.drawLine(Offset(iconsSize, centerY - iconsSize),
+        Offset(-iconsSize, centerY + iconsSize), p);
 
     // draw the circle
     canvas.drawCircle(Offset(size.width, centerY), iconsSize, p);
