@@ -1,5 +1,5 @@
-import 'package:example/Res.dart';
 import 'package:flutter/material.dart';
+import 'package:widget_circular_animator/utils/animationsSelector.dart';
 import 'package:widget_circular_animator/widget_circular_animator.dart';
 
 void main() {
@@ -16,11 +16,21 @@ class MyApp extends StatelessWidget {
           size: 200,
           innerIconsSize: 3,
           outerIconsSize: 3,
-          innerColor: Colors.deepOrange,
-          outerColor: Colors.deepPurple,
-          innerAnimationSeconds: 30,
-          outerAnimationSeconds: 30,
-          child: Image.asset(Resources.person),
+          innerAnimation: Animations.bounceIn,
+          outerAnimation: Animations.bounceIn,
+          innerColor: Colors.orangeAccent,
+          outerColor: Colors.orangeAccent,
+          innerAnimationSeconds: 10,
+          outerAnimationSeconds: 10,
+          child: Container(
+            decoration:
+                BoxDecoration(shape: BoxShape.circle, color: Colors.grey[200]),
+            child: Icon(
+              Icons.person_outline,
+              color: Colors.deepOrange[200],
+              size: 60,
+            ),
+          ),
         )),
       ),
     );
