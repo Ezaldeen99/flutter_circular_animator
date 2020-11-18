@@ -8,22 +8,28 @@ import 'package:meta/meta.dart';
 class WidgetCircularAnimator extends StatefulWidget {
   final Color innerColor;
   final Color outerColor;
+  final Curve innerAnimation;
+  final Curve outerAnimation;
   final double innerIconsSize;
   final double size;
   final double outerIconsSize;
   final int innerAnimationSeconds;
   final int outerAnimationSeconds;
   final Widget child;
+  final bool reverse;
 
   const WidgetCircularAnimator({
     @required this.child,
     this.innerColor = Colors.deepOrange,
     this.outerColor = Colors.deepOrange,
+    this.innerAnimation = Curves.linear,
+    this.outerAnimation = Curves.linear,
     this.size = 200,
     this.innerIconsSize = 3,
     this.outerIconsSize = 3,
     this.innerAnimationSeconds = 30,
     this.outerAnimationSeconds = 30,
+    this.reverse = true,
   }) : assert(child != null);
 
   @override
@@ -113,12 +119,18 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
         duration: Duration(seconds: widget.outerAnimationSeconds), vsync: this);
 
     animation1 = Tween<double>(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-        parent: controller1, curve: Interval(0.0, 1.0, curve: Curves.linear)));
+        parent: controller1,
+        curve: Interval(0.0, 1.0, curve: widget.innerAnimation)));
 
-    animation2 = ReverseAnimation(Tween<double>(begin: -1.0, end: 0.0).animate(
+    var secondAnimation = Tween<double>(begin: -1.0, end: 0.0).animate(
         CurvedAnimation(
             parent: controller2,
-            curve: Interval(0.0, 1.0, curve: Curves.linear))));
+            curve: Interval(0.0, 1.0, curve: widget.outerAnimation)));
+
+    // reverse or same direction animation
+    widget.reverse
+        ? animation2 = ReverseAnimation(secondAnimation)
+        : animation2 = secondAnimation;
 
     controller2.repeat();
     controller1.repeat();
@@ -141,6 +153,7 @@ class Arc2Painter extends CustomPainter {
 
     Rect rect = Rect.fromLTWH(0.0, 0.0, size.width, size.height);
 
+    // draw the three arcs
     canvas.drawArc(rect, 0.0, 0.67 * pi, false, p);
     canvas.drawArc(rect, 0.74 * pi, 0.65 * pi, false, p);
     canvas.drawArc(rect, 1.46 * pi, 0.47 * pi, false, p);
@@ -161,8 +174,7 @@ class Arc2Painter extends CustomPainter {
     canvas.drawLine(new Offset(centerX + lineLength, centerY + lineLength),
         new Offset(centerX - lineLength, centerY - lineLength), p);
     // the circle
-    canvas.drawCircle(
-        Offset(size.width * 0.385, size.width * 0.015), iconsSize + 1, p);
+    canvas.drawCircle(Offset(centerX, centerY), iconsSize + 1, p);
 
     // third shape
     canvas.drawOval(
@@ -193,6 +205,7 @@ class Arc1Painter extends CustomPainter {
 
     Rect rect = new Rect.fromLTWH(0, 0, size.width, size.height);
 
+    // draw the two arcs
     canvas.drawArc(rect, 0.15, 0.9 * pi, false, p);
     canvas.drawArc(rect, 1.05 * pi, 0.9 * pi, false, p);
 
@@ -204,7 +217,7 @@ class Arc1Painter extends CustomPainter {
         new Offset(-iconsSize, centerY + iconsSize), p);
 
     // draw the circle
-    canvas.drawCircle(Offset(size.width, size.width / 2), iconsSize, p);
+    canvas.drawCircle(Offset(size.width, centerY), iconsSize, p);
   }
 
   @override
