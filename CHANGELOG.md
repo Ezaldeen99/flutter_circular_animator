@@ -1,6 +1,7 @@
 # [0.1.5]
 
-* supports all flutter curve animations for the inner and outer circles
+* supports all flutter curve animations for the inner and outer circles.
+* add reverse or same directions animations feature.
 
 # [0.1.4]
 
