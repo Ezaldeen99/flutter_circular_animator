@@ -1,4 +1,4 @@
-# widget_circular_animator
+# [widget_circular_animator](https://pub.dev/packages/widget_circular_animator/install)
 
 A new Flutter widget animator inspired by this lottie animation. [https://lottiefiles.com/3619-profile]
 
