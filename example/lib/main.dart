@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widget_circular_animator/utils/animationsSelector.dart';
 import 'package:widget_circular_animator/widget_circular_animator.dart';
 
 void main() {
@@ -16,8 +15,8 @@ class MyApp extends StatelessWidget {
           size: 200,
           innerIconsSize: 3,
           outerIconsSize: 3,
-          innerAnimation: Animations.bounceIn,
-          outerAnimation: Animations.bounceIn,
+          innerAnimation: Curves.bounceIn,
+          outerAnimation: Curves.bounceIn,
           innerColor: Colors.orangeAccent,
           reverse: false,
           outerColor: Colors.orangeAccent,

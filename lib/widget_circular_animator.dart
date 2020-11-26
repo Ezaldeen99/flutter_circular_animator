@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
 class WidgetCircularAnimator extends StatefulWidget {
-
-
   const WidgetCircularAnimator({
     @required this.child,
     this.innerColor = Colors.deepOrange,
