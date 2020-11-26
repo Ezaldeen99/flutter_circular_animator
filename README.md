@@ -78,8 +78,6 @@ See the full example [circular_animator_example](https://github.com/Ezaldeen99/f
 This widget supports all flutter curve animations.
 You can see all the supported animations here https://api.flutter.dev/flutter/animation/Curves-class.html.
 
-The class [Animations](https://github.com/Ezaldeen99/flutter_circular_animator/tree/master/lib/utils/animationsSelector.dart) is already there in the library to make things easier on you choosing your animation
-
 
 # Widget Properties
 
@@ -112,7 +110,7 @@ Change the icons size for the outer circle
 Please use the animations class in the current library for example
 
 ```dart
-          innerAnimation: Animations.bounceIn,
+          innerAnimation: Curves.bounceIn,
 ```
 
 **outerAnimation**
@@ -122,7 +120,7 @@ Please use the animations class in the current library for example
 Please use the animations class in the current library for example.
 
 ```dart
-          innerAnimation: Animations.linear,
+          outerAnimation: Curves.linear,
 
 ```
 

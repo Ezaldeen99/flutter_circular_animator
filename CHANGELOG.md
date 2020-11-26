@@ -1,3 +1,8 @@
+# [0.1.5+!]
+
+* remove the animations file, flutter Curves class will be used instead.
+
+
 # [0.1.5]
 
 * supports all flutter curve animations for the inner and outer circles.
