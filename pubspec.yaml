@@ -1,16 +1,16 @@
 name: widget_circular_animator
 description: A pre-built Flutter circular animator, can suit your new profile view or your any other widgets.
-version: 0.1.5+1
+version: 1.0.0
 homepage: https://github.com/Ezaldeen99/widget_circular_animator
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  meta: ^1.2.4
+  meta: ^1.3.0
 
 dev_dependencies:
   flutter_test:

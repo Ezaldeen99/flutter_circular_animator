@@ -1,3 +1,12 @@
+
+# [1.0.0]
+
+* migrate to null-safety.
+
+# [0.1.6]
+
+* supports animations inside lists.
+
 # [0.1.5+!]
 
 * remove the animations file, flutter Curves class will be used instead.
