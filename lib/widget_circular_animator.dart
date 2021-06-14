@@ -53,6 +53,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
   Widget build(BuildContext context) {
     return Container(
       child: Stack(
+        alignment: AlignmentDirectional.center,
         children: <Widget>[
           _firstArc(),
           _secondArc(),
