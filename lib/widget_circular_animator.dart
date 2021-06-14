@@ -17,19 +17,40 @@ class WidgetCircularAnimator extends StatefulWidget {
     this.innerAnimationSeconds = 30,
     this.outerAnimationSeconds = 30,
     this.reverse = true,
+    this.singleRing = false,
   });
 
+  ///[innerColor] inner circle color
   final Color innerColor;
+
+  ///[outerColor] outer circle color
+
   final Color outerColor;
+
+  ///[innerAnimation] inner circle animation type
   final Curve innerAnimation;
+
+  ///[outerAnimation] outer circle animation type
   final Curve outerAnimation;
+
+  ///[innerIconsSize] inner circle icons size
   final double innerIconsSize;
-  final double size;
+
+  ///[outerIconsSize] outer circle icons size
   final double outerIconsSize;
+
+  ///[size] widget size
+  /// the child widget will take 70% and the animations will take 30%
+  final double size;
   final int innerAnimationSeconds;
   final int outerAnimationSeconds;
   final Widget child;
+
+  ///[reverse] reverse the animations ?
   final bool reverse;
+
+  ///[singleRing] use only one ring animations
+  final bool singleRing;
 
   @override
   _WidgetAnimatorState createState() => _WidgetAnimatorState();
@@ -55,7 +76,7 @@ class _WidgetAnimatorState extends State<WidgetCircularAnimator>
         alignment: AlignmentDirectional.center,
         children: <Widget>[
           _firstArc(),
-          _secondArc(),
+          if (!widget.singleRing) _secondArc(),
           _child(),
         ],
       ),

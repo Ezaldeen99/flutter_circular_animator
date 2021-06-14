@@ -1,7 +1,8 @@
-
 # [1.0.0]
 
 * migrate to null-safety.
+* add support to single ring only animations
+* update documentations.
 
 # [0.1.6]
 
